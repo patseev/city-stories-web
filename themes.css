@@ -194,3 +194,18 @@ html[data-theme=folio]{--serif:'Cormorant Garamond',Georgia,serif;--sans:'Manrop
 
 /* Mobile cover reaches both screen edges; text keeps its own inset. */
 @media(max-width:600px){main{padding-inline:6%}[data-theme=cover] .hero{margin:0 -6vw}}
+
+/* Keep notices separate from the route and all six dates visible on phones. */
+[data-theme=cover] .plan-alert + .plan-timeline{margin-top:24px}
+@media(max-width:600px){
+  html[data-theme=cover] .days{grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;scroll-snap-type:none}
+  [data-theme=cover] .day{min-width:0;padding:16px 10px}
+  [data-theme=cover] .day:nth-child(3n){border-right:0}
+  [data-theme=cover] .day:first-child{border-left:0}
+  [data-theme=cover] .day:nth-child(n+4){border-top:1px solid var(--line)}
+  [data-theme=cover] .day-week{display:block}
+  [data-theme=cover] .plan-timeline{margin-left:0}
+  [data-theme=cover] .stop-heading{flex-wrap:wrap;gap:8px}
+  [data-theme=cover] .stop-heading h4{width:100%;min-width:0}
+  [data-theme=cover] .next-label{padding-top:0}
+}
