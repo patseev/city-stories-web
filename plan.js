@@ -8,7 +8,7 @@ window.planDay=planState.day||(/^2026-10-(24|25|26|27|28|29)$/.test(istanbulDate
 if(stories.length)render();
 const routeModes={walking:'Пешком',driving:'Такси / авто',transit:'Общественный транспорт'};
 function savePlan(){try{localStorage.setItem(planKey,JSON.stringify(planState))}catch{toast('Отметки доступны только до закрытия страницы. Хранилище браузера недоступно.')}}
-function directions(s){const p=new URLSearchParams({api:'1',destination:s.place,travelmode:s.mode,dir_action:'navigate'});return 'https://www.google.com/maps/dir/?'+p.toString()}
+function directions(s){const p=new URLSearchParams({api:'1',destination:s.place,travelmode:s.mode});return 'https://www.google.com/maps/dir/?'+p.toString()}
 function stepStatus(s){if(s.stories.length&&s.stories.every(id=>visited.has(id)))return 'done';if(planState.steps[s.id]==='skip')return 'skip';if(!s.stories.length&&planState.steps[s.id]==='done')return 'done';return 'pending'}
 function selectedDay(){return itinerary.days.find(d=>d.day===window.planDay)}
 function activeStep(d){const index=planState.starts[d.day];if(Number.isInteger(index)&&d.stops[index]){if(stepStatus(d.stops[index])==='pending')return index;const after=d.stops.findIndex((s,i)=>i>index&&stepStatus(s)==='pending');if(after>=0)return after;}return d.stops.findIndex(s=>stepStatus(s)==='pending')}
