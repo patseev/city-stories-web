@@ -1,0 +1,588 @@
+{
+  "hotel": "Art Karakoy Hotel, Perşembe Pazarı Caddesi 21, Istanbul",
+  "days": [
+    {
+      "day": 24,
+      "title": "Прилёт и Каракёй",
+      "summary": "Заселение и спокойный вечер рядом с отелем.",
+      "budget": "1 900–3 300 ₽ на человека",
+      "back": "Пешком из Каракёя. Паром не нужен.",
+      "stops": [
+        {
+          "time": "17:00–18:15",
+          "title": "Прилёт в Стамбул",
+          "note": "Паспортный контроль и получение багажа.",
+          "place": "Istanbul Airport IST",
+          "mode": "driving",
+          "stories": [],
+          "fixed": true,
+          "id": "24-0"
+        },
+        {
+          "time": "18:15–19:45",
+          "title": "Трансфер и заселение",
+          "note": "До отеля на такси. Альтернатива: М11 → М2 → Шишхане.",
+          "place": "Art Karakoy Hotel, Perşembe Pazarı Caddesi 21, Istanbul",
+          "mode": "driving",
+          "stories": [],
+          "fixed": false,
+          "id": "24-1"
+        },
+        {
+          "time": "19:45–21:15",
+          "title": "Ужин в Каракёе",
+          "note": "Ужин рядом с отелем, без поездок в другие районы.",
+          "place": "Karaköy Istanbul",
+          "mode": "walking",
+          "stories": [
+            1
+          ],
+          "fixed": false,
+          "id": "24-2"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "title": "Галата, Пера, Джихангир",
+      "summary": "Лестницы, архитектура, кафе и книги. Основная прогулка пешком.",
+      "budget": "2 700–4 600 ₽ на человека",
+      "back": "От Джихангира в отель пешком или на такси.",
+      "stops": [
+        {
+          "time": "09:30–10:15",
+          "title": "Завтрак в Каракёе",
+          "note": "Кафе пока не выбрано. Карта ведёт в район Каракёй. После завтрака направляемся к Банковой улице.",
+          "place": "Karaköy, Beyoğlu, Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "25-0",
+          "relatedStories": [
+            1
+          ]
+        },
+        {
+          "time": "10:15–10:55",
+          "title": "Лестница Камондо",
+          "note": "Лестница Камондо и время на фотографии.",
+          "place": "Kamondo Merdivenleri Istanbul",
+          "mode": "walking",
+          "stories": [
+            2
+          ],
+          "fixed": false,
+          "id": "25-1",
+          "primaryStory": 2
+        },
+        {
+          "time": "11:00–12:15",
+          "title": "SALT Galata",
+          "note": "Бывший Османский банк. Часы работы и условия входа проверить перед посещением.",
+          "place": "SALT Galata Istanbul",
+          "mode": "walking",
+          "stories": [
+            3
+          ],
+          "fixed": false,
+          "id": "25-2",
+          "primaryStory": 3
+        },
+        {
+          "time": "12:15–13:20",
+          "title": "Галатская башня",
+          "note": "Осмотр снаружи и улочки вокруг. Подъём наверх по желанию.",
+          "place": "Galata Kulesi Istanbul",
+          "mode": "walking",
+          "stories": [
+            4
+          ],
+          "fixed": false,
+          "id": "25-3",
+          "primaryStory": 4
+        },
+        {
+          "time": "13:20–14:40",
+          "title": "Serdar-ı Ekrem",
+          "note": "Обед, кофе и небольшие магазины у исторических фасадов.",
+          "place": "Serdar-ı Ekrem Caddesi Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "25-4"
+        },
+        {
+          "time": "14:40–16:10",
+          "title": "Истикляль и Пера",
+          "note": "Исторический трамвай, пассажи и книжные магазины.",
+          "place": "İstiklal Caddesi Istanbul",
+          "mode": "walking",
+          "stories": [
+            5,
+            6
+          ],
+          "fixed": false,
+          "id": "25-5"
+        },
+        {
+          "time": "16:10–18:20",
+          "title": "Джихангир",
+          "note": "Кофе, магазины и ранний ужин. Можно остаться подольше.",
+          "place": "Cihangir Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "25-6"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "title": "Ортакёй и Босфор",
+      "summary": "Набережные, деревянные дома и два берега пролива.",
+      "budget": "3 300–5 900 ₽ на человека",
+      "back": "Такси до отеля. Альтернатива: Ускюдар → Marmaray до Сиркеджи → Т1 до Каракёя.",
+      "stops": [
+        {
+          "time": "09:30–10:00",
+          "title": "Трамвай до Кабаташа",
+          "note": "От отеля пешком к Каракёю, затем Т1 в сторону Кабаташа до конечной.",
+          "place": "Kabataş Tramvay Durağı Istanbul",
+          "mode": "transit",
+          "stories": [],
+          "fixed": false,
+          "id": "26-0"
+        },
+        {
+          "time": "10:00–10:30",
+          "title": "Такси до Ортакёя",
+          "note": "Такси от Кабаташа до площади Ортакёй.",
+          "place": "Ortaköy Meydanı Istanbul",
+          "mode": "driving",
+          "stories": [],
+          "fixed": false,
+          "id": "26-1",
+          "relatedStories": [
+            18
+          ]
+        },
+        {
+          "time": "10:30–12:00",
+          "title": "Мечеть Ортакёй",
+          "note": "Площадь, мечеть Бююк-Меджидие и вид на Босфорский мост.",
+          "place": "Büyük Mecidiye Camii Istanbul",
+          "mode": "walking",
+          "stories": [
+            18,
+            19
+          ],
+          "fixed": false,
+          "id": "26-2",
+          "primaryStory": 18
+        },
+        {
+          "time": "12:00–13:00",
+          "title": "Обед у воды",
+          "note": "Кофе или обед в Ортакёе. В дождь можно задержаться в кафе.",
+          "place": "Ortaköy Meydanı Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "26-3",
+          "relatedStories": [
+            18
+          ]
+        },
+        {
+          "time": "13:00–13:25",
+          "title": "Такси в Арнавуткёй",
+          "note": "Вдоль оживлённой дороги пешком идти необязательно.",
+          "place": "Arnavutköy Sahili Beşiktaş Istanbul",
+          "mode": "driving",
+          "stories": [],
+          "fixed": false,
+          "id": "26-4",
+          "relatedStories": [
+            20
+          ]
+        },
+        {
+          "time": "13:25–15:20",
+          "title": "Набережная Арнавуткёя",
+          "note": "Деревянные дома ялы, фотографии и кафе.",
+          "place": "Arnavutköy Sahili Beşiktaş Istanbul",
+          "mode": "walking",
+          "stories": [
+            20
+          ],
+          "fixed": false,
+          "id": "26-5",
+          "primaryStory": 20
+        },
+        {
+          "time": "15:20–16:05",
+          "title": "Через Босфор в Кузгунджук",
+          "note": "Такси через Босфорский мост в Кузгунджук.",
+          "place": "Kuzguncuk Istanbul",
+          "mode": "driving",
+          "stories": [],
+          "fixed": false,
+          "id": "26-6",
+          "relatedStories": [
+            19,
+            21
+          ]
+        },
+        {
+          "time": "16:05–18:45",
+          "title": "Кузгунджук и İcadiye",
+          "note": "Прогулка по жилым улицам, кофе и ужин.",
+          "place": "İcadiye Caddesi Kuzguncuk Istanbul",
+          "mode": "walking",
+          "stories": [
+            21
+          ],
+          "fixed": false,
+          "id": "26-7",
+          "primaryStory": 21
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "title": "Султанахмет и Мода",
+      "summary": "Старый город, цистерна Гюльхане и паром на азиатский берег.",
+      "budget": "2 700–4 900 ₽ на человека",
+      "back": "Паром Кадыкёй → Каракёй, если есть вечерний рейс. Запасной путь: М4 → Айрылыкчешмеси → Marmaray до Сиркеджи → Т1 до Каракёя.",
+      "stops": [
+        {
+          "time": "09:15–09:45",
+          "title": "Трамвай в Султанахмет",
+          "note": "Т1 от Каракёя в сторону Багджылара. Выход на Султанахмет.",
+          "place": "Sultanahmet Tramvay Durağı Istanbul",
+          "mode": "transit",
+          "stories": [],
+          "fixed": false,
+          "id": "27-0",
+          "relatedStories": [
+            8,
+            9
+          ]
+        },
+        {
+          "time": "09:45–11:00",
+          "title": "Голубая мечеть",
+          "note": "Посещение вне молитв. Закрытая одежда; женщинам нужен платок.",
+          "place": "Sultanahmet Camii Istanbul",
+          "mode": "walking",
+          "stories": [
+            8
+          ],
+          "fixed": false,
+          "id": "27-1",
+          "primaryStory": 8
+        },
+        {
+          "time": "11:00–12:05",
+          "title": "Ипподром и Айя-София",
+          "note": "Площадь, обелиски и Айя-София снаружи. Вход внутрь не включён в план.",
+          "place": "Sultanahmet Meydanı Istanbul",
+          "mode": "walking",
+          "stories": [
+            7,
+            9,
+            10,
+            11,
+            12
+          ],
+          "fixed": false,
+          "id": "27-2"
+        },
+        {
+          "time": "12:05–13:20",
+          "title": "Парк Гюльхане",
+          "note": "Прогулка по бывшим дворцовым садам. Историю Топкапы можно прочитать здесь; посещение дворца в этот день не запланировано.",
+          "place": "Gülhane Parkı Istanbul",
+          "mode": "walking",
+          "stories": [
+            13
+          ],
+          "fixed": false,
+          "id": "27-3",
+          "relatedStories": [
+            15
+          ],
+          "primaryStory": 13
+        },
+        {
+          "time": "13:20–14:05",
+          "title": "Цистерна Гюльхане",
+          "note": "Gülhane Sanat. Часы работы, выставку и условия входа нужно уточнить.",
+          "place": "Gülhane Sanat Istanbul",
+          "mode": "walking",
+          "stories": [
+            14
+          ],
+          "fixed": false,
+          "id": "27-4",
+          "primaryStory": 14
+        },
+        {
+          "time": "14:05–15:20",
+          "title": "Обед в Sirkeci Lokantası 1912",
+          "note": "Ресторан, фасад исторического здания и улицы Сиркеджи.",
+          "place": "Sirkeci Lokantası 1912 Istanbul",
+          "mode": "walking",
+          "stories": [
+            16
+          ],
+          "fixed": false,
+          "id": "27-5"
+        },
+        {
+          "time": "15:20–16:00",
+          "title": "К причалу Эминёню",
+          "note": "Идём из Сиркеджи к причалу и смотрим на Галатский мост.",
+          "place": "Eminönü Kadıköy İskelesi Istanbul",
+          "mode": "walking",
+          "stories": [
+            17
+          ],
+          "fixed": false,
+          "id": "27-6"
+        },
+        {
+          "time": "16:00–16:45",
+          "title": "Паром в Кадыкёй",
+          "note": "Это окно с запасом на посадку из вашего плана, не подтверждённый рейс.",
+          "place": "Kadıköy İskelesi Istanbul",
+          "mode": "transit",
+          "stories": [],
+          "fixed": false,
+          "id": "27-7"
+        },
+        {
+          "time": "16:45–17:35",
+          "title": "Улицы Моды",
+          "note": "Пешком от причала через кофейни и книжные магазины.",
+          "place": "Moda Caddesi Kadıköy Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "27-8"
+        },
+        {
+          "time": "17:35–18:25",
+          "title": "Набережная Моды",
+          "note": "Время у воды и фотографии в вечернем свете.",
+          "place": "Moda Sahili Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "27-9"
+        },
+        {
+          "time": "18:25–20:00",
+          "title": "Ужин в Кадыкёе",
+          "note": "Выбираем место в Моде или Кадыкёе.",
+          "place": "Kadıköy Çarşı Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "27-10"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "title": "Бююкада",
+      "summary": "Паром, обычные велосипеды и деревянные виллы.",
+      "budget": "3 100–5 300 ₽ на человека",
+      "back": "С острова нужен паром. По PDF: Бююкада 18:30 → Кабаташ 20:20, затем Т1 до Каракёя. Рейс не проверен.",
+      "alert": "Обратный паром по плану в 18:30. Быть у причала в 17:50. Перед поездкой проверить рейсы и работу проката, особенно на 28 октября.",
+      "stops": [
+        {
+          "time": "07:45–08:05",
+          "title": "Завтрак в отеле и выход",
+          "note": "Берём воду, тёплый слой для парома и зарядку.",
+          "place": "Art Karakoy Hotel, Perşembe Pazarı Caddesi 21, Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "28-0"
+        },
+        {
+          "time": "08:05–08:25",
+          "title": "Трамвай до Кабаташа",
+          "note": "Т1 в сторону Кабаташа до конечной, затем пешком к причалу.",
+          "place": "Kabataş Tramvay Durağı Istanbul",
+          "mode": "transit",
+          "stories": [],
+          "fixed": false,
+          "id": "28-1"
+        },
+        {
+          "time": "08:25–09:05",
+          "title": "Посадка на паром",
+          "note": "По плану прийти за 30–40 минут. Отправление 09:05 нужно подтвердить.",
+          "place": "Kabataş Adalar İskelesi Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": true,
+          "id": "28-2"
+        },
+        {
+          "time": "09:05–10:50",
+          "title": "Паром на Бююкаду",
+          "note": "Прибытие около 10:50 по расписанию из PDF. Проверить актуальный рейс.",
+          "place": "Büyükada İskelesi Istanbul",
+          "mode": "transit",
+          "stories": [
+            22
+          ],
+          "fixed": true,
+          "id": "28-3"
+        },
+        {
+          "time": "10:50–11:30",
+          "title": "23 Nisan Caddesi",
+          "note": "Идём к прокатам. Уточняем наличие велосипедов, цену и условия возврата.",
+          "place": "23 Nisan Caddesi Büyükada",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "28-4",
+          "relatedStories": [
+            22
+          ]
+        },
+        {
+          "time": "11:30–13:45",
+          "title": "Велопрогулка от Kısmet Bisiklet",
+          "note": "Обычные велосипеды, более пологие улицы и остановки у вилл. Запасной прокат: Adalar Bisiklet.",
+          "place": "Kısmet Bisiklet Büyükada",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "28-5"
+        },
+        {
+          "time": "13:45–15:00",
+          "title": "Обед и отдых",
+          "note": "Если прокат почасовой, заранее уточняем условия перерыва.",
+          "place": "Büyükada Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "28-6",
+          "relatedStories": [
+            22
+          ]
+        },
+        {
+          "time": "15:00–16:45",
+          "title": "Улица Чанкая",
+          "note": "Велопрогулка или пешая прогулка среди деревянных домов. Без крутых подъёмов.",
+          "place": "Çankaya Caddesi Büyükada",
+          "mode": "walking",
+          "stories": [
+            23
+          ],
+          "fixed": false,
+          "id": "28-7",
+          "primaryStory": 23
+        },
+        {
+          "time": "16:45–17:15",
+          "title": "Возврат велосипедов",
+          "note": "Вернуть велосипеды с запасом до закрытия проката.",
+          "place": "Kısmet Bisiklet Büyükada",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "28-8"
+        },
+        {
+          "time": "17:15–17:50",
+          "title": "Чай у порта",
+          "note": "Короткий отдых рядом с причалом.",
+          "place": "Büyükada İskelesi Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "28-9"
+        },
+        {
+          "time": "17:50–18:30",
+          "title": "Посадка на обратный паром",
+          "note": "Плановый рейс 18:30 до Кабаташа. Не рассчитываем на последний рейс; расписание нужно проверить.",
+          "place": "Büyükada İskelesi Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": true,
+          "id": "28-10"
+        },
+        {
+          "time": "18:30–20:20",
+          "title": "Паром до Кабаташа",
+          "note": "Этот участок явно выделен из времени обратного рейса в PDF.",
+          "place": "Kabataş Adalar İskelesi Istanbul",
+          "mode": "transit",
+          "stories": [],
+          "fixed": true,
+          "id": "28-11"
+        },
+        {
+          "time": "20:20–20:55",
+          "title": "Возвращение в отель",
+          "note": "Т1 до Каракёя или такси.",
+          "place": "Art Karakoy Hotel, Perşembe Pazarı Caddesi 21, Istanbul",
+          "mode": "transit",
+          "stories": [],
+          "fixed": false,
+          "id": "28-12"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "title": "Вылет",
+      "summary": "Сборы и дорога в аэропорт без дополнительных остановок.",
+      "budget": "1 100–2 500 ₽ на человека",
+      "back": "Финальная точка дня: аэропорт IST.",
+      "alert": "В PDF отмечен праздничный день 29 октября. Трансфер заказать заранее и оставить запас на дорогу. Время рейса сверить с билетом.",
+      "stops": [
+        {
+          "time": "07:30–08:15",
+          "title": "Завтрак в отеле и сборы",
+          "note": "Готовимся к выезду, проверяем документы.",
+          "place": "Art Karakoy Hotel, Perşembe Pazarı Caddesi 21, Istanbul",
+          "mode": "walking",
+          "stories": [],
+          "fixed": false,
+          "id": "29-0"
+        },
+        {
+          "time": "08:15–10:30",
+          "title": "Трансфер в аэропорт",
+          "note": "В плане заложен запас. Альтернатива: М2 от Шишхане до Гайреттепе, затем М11.",
+          "place": "Istanbul Airport IST",
+          "mode": "driving",
+          "stories": [],
+          "fixed": true,
+          "id": "29-1"
+        },
+        {
+          "time": "10:30–14:00",
+          "title": "Регистрация и вылет",
+          "note": "Контроль безопасности и вылет около 14:00 по вашему плану. Сверить с билетом.",
+          "place": "Istanbul Airport IST",
+          "mode": "walking",
+          "stories": [],
+          "fixed": true,
+          "id": "29-2"
+        }
+      ]
+    }
+  ]
+}
