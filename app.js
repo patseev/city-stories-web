@@ -55,3 +55,31 @@ const stage=$('.lightbox-stage');
 stage.addEventListener('touchstart',e=>{swipeStart=e.touches.length===1?{x:e.touches[0].clientX,y:e.touches[0].clientY}:null},{passive:true});
 stage.addEventListener('touchend',e=>{if(!swipeStart)return;const t=e.changedTouches[0],dx=t.clientX-swipeStart.x,dy=t.clientY-swipeStart.y;swipeStart=null;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5)stepPhoto(dx<0?1:-1)},{passive:true});
 stage.addEventListener('touchcancel',()=>{swipeStart=null},{passive:true});
+
+// Keep the mobile shortcut available while reading a story as well as the page.
+const topButton=$('#back-to-top'),storyDialog=$('#story-dialog');
+const mobileTop=matchMedia('(max-width:768px)');
+function updateTopButton(){
+ const host=storyDialog.open?storyDialog:document.body;
+ if(topButton.parentElement!==host)host.append(topButton);
+ const distance=storyDialog.open?Math.max(storyDialog.scrollTop,window.scrollY):window.scrollY;
+ topButton.hidden=!mobileTop.matches||lightbox.open||distance<240;
+}
+window.addEventListener('scroll',updateTopButton,{passive:true});
+storyDialog.addEventListener('scroll',updateTopButton,{passive:true});
+mobileTop.addEventListener('change',updateTopButton);
+const topObserver=new MutationObserver(updateTopButton);
+for(const dialog of [storyDialog,lightbox])topObserver.observe(dialog,{attributes:true,attributeFilter:['open']});
+topButton.addEventListener('click',()=>{
+ const goTop=()=>{
+  history.replaceState(null,'',location.pathname+location.search);
+  window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  document.querySelector('header .brand').focus({preventScroll:true});
+ };
+ if(storyDialog.open){
+  storyOrigin=null;
+  storyDialog.addEventListener('close',()=>requestAnimationFrame(goTop),{once:true});
+  storyDialog.close();
+ }else goTop();
+});
+updateTopButton();
